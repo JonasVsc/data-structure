@@ -2,6 +2,7 @@
 class Stack {
 public:
     Stack(int size_);
+    ~Stack();
     void insert(int item);
     void remove();
     bool isFull();

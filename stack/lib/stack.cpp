@@ -13,6 +13,11 @@ Stack::Stack(int size_) :size(size_), stack(new int[size_]), index(0)
     }
 }
 
+Stack::~Stack()
+{
+    delete [] stack;
+}
+
 void Stack::insert(int item)
 {
     if(isFull()) {
