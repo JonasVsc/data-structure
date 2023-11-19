@@ -7,9 +7,12 @@ struct Node {
 class DynamicStack {
 public:
     DynamicStack();
+    ~DynamicStack();
     void shift(int value);
-    void pop();
+    int pop();
     void print();
+    bool isEmpty();
+    bool isFull();
 
 private:
     Node* top;
